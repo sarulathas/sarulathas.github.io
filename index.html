@@ -8,7 +8,7 @@ layout: default
 <script>
   async function loaded(reader) {
     const response = await 
-fetch('https://sarulathas-basic.hf.space/predict/', {
+fetch('https://sarulathas-basic.hf.space/api/predict/', {
       method: "POST", body: JSON.stringify({ "data": [reader.result] }),
       headers: { "Content-Type": "application/json" }
     });
